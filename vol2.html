@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <meta name="description" content=>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+<script type="text/javascript">
+
+/*-----------------------------
+
+var sign = prompt("cual es tu signo").toLowerCase();
+alert("buscando...");
+
+switch(sign){
+
+	case "tauro":
+	alert("bla bla bla");
+	break;
+
+	case "geminis":
+	alert("bla bla bla x2");
+	break;
+
+	case "leo":
+	alert("bla bla x3");
+	break;
+
+	default:
+	alert("cualquier cosa");
+	break;
+}
+
+----------------------------------------
+
+for(var i =1; i <=100; i++){
+ if(i%3 ===0){
+ 	if(i%5 === 0){
+ 		console.log("okok2");
+ 	}
+ 	else{
+ 		console.log("ok");
+ 	}
+ }
+else if(i%5 === 0){
+	console.log("ok2");
+}
+else{
+	console.log(i);
+}
+}
+
+------------------------------
+
+function hola(nombre){
+	console.log("holaa " + nombre);
+}
+hola("franco");
+
+-----------------------------------
+
+var amigos=["Marco","Lisa","Andres","Javier","Pedro" ];
+function sldamigos(){
+	for(var i = 0; i< amigos.length; i++){
+		console.log("HOLA " + amigos[i]);
+	}
+}
+
+sldamigos();
+
+-----------------------------------------------*/
+
+var opciones = ["opcion 1","opcion 2","opcion 3","opcion 4","opcion 5"];
+
+function randonNumber(range){
+
+	return Math.round(Math.random()*range);
+}
+
+alert( opciones [randonNumber(opciones.length - 1 ) ] );
+
+var listaArmas = ["tenedor","metralleta","pistola" ];
+
+var arma = listaArmas [randonNumber (listaArmas.length - 1) ];
+alert("seleccionar " + arma + ".")
+
+alert("un wn entra por la puerta, toma el " + arma + " ataca");
+
+var survival = randonNumber(2);
+
+if(survival === 0){
+	alert("el wn te mato , perdiste");
+}else if (survival > 0){
+	alert("mataste al wn con " + " " + arma + ", ganaste");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
